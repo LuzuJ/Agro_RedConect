@@ -1,1 +1,0 @@
-export { GroupsView } from './GroupsView';

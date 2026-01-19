@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "AgroCacao IA",
+    "slug": "agrocacao-ia",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo_AgroCacaoIA_optimized.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo_AgroCacaoIA_optimized.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#132210"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.agrocacao.ia",
+      "infoPlist": {
+        "NSCameraUsageDescription": "AgroCacao IA necesita acceso a tu cámara para detectar enfermedades en tiempo real.",
+        "NSPhotoLibraryUsageDescription": "AgroCacao IA necesita acceso a tu galería para guardar las fotos de diagnóstico.",
+        "NSLocationWhenInUseUsageDescription": "AgroCacao IA necesita tu ubicación para mostrar alertas de plagas cercanas."
+      }
+    },
+    "android": {
+      "package": "com.agrocacao.ia",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo_AgroCacaoIA_optimized.png",
+        "backgroundColor": "#132210"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir a AgroCacao IA usar tu cámara para detectar enfermedades.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permitir a AgroCacao IA acceder a tu ubicación para mostrar alertas de plagas cercanas."
+        }
+      ]
+    ],
+    "config": {
+      "googleMaps": {
+        "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f94f261-974b-4a09-9f64-63ba3017ffe1"
+      }
+    }
+  }
+}

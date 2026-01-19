@@ -1,0 +1,49 @@
+<GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2026 LuzuJ
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+ADDITIONAL TERMS FOR AI MODEL AND COMMERCIAL USE
+
+1. AI MODEL LICENSE
+   The included AI model (best_int8.tflite) is provided for:
+   - Educational and research purposes
+   - Non-commercial agricultural cooperatives use
+   - Demonstration and testing purposes
+
+2. DUAL LICENSING FOR COMMERCIAL USE
+   If you wish to use this software or the AI model for commercial purposes:
+   - Contact: LuzuJ (repository owner)
+   - Commercial licenses available with premium model versions
+   - Revenue sharing agreements negotiable for large-scale deployments
+
+3. DATA ATTRIBUTION
+   Training data was collected with cooperation from cacao cooperatives
+   in Esmeraldas, Ecuador. Any derivative works must maintain attribution.
+
+4. TRADEMARK
+   "AgroCacao IA" and associated branding are trademarks. Use of the 
+   trademark requires explicit permission for commercial applications.
+
+---
+
+For commercial inquiries, custom models, or enterprise support:
+GitHub: https://github.com/LuzuJ/Agro_RedConect
+
+Full GPL-3.0 License Text:
+https://www.gnu.org/licenses/gpl-3.0.en.html
