@@ -2,6 +2,10 @@
 
 # 🌱 AgroCacao IA
 
+## ⚠️ ESTADO DEL PROYECTO: BETA TEMPRANA
+
+Esta aplicación está en desarrollo activo. NO usar para decisiones críticas de cultivo sin supervisión profesional.
+
 ### Sistema Inteligente de Detección de Enfermedades en Cacao
 
 [![React Native](https://img.shields.io/badge/React_Native-0.81.5-61DAFB?logo=react)](https://reactnative.dev/)
