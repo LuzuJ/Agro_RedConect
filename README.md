@@ -22,9 +22,9 @@ Esta aplicación está en desarrollo activo. NO usar para decisiones críticas d
 
 | Plataforma | Enlace de Descarga |
 |------------|-------------------|
-| **Android** | [![Android APK](https://img.shields.io/badge/Android-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk) |
+| **Android** | [![Android APK](https://img.shields.io/badge/Android-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/LuzuJ/Agro_RedConect/raw/main/releases/AgroCacao-IA-v1.0.0.apk) |
 | **Android (F-Droid)** | _Próximamente_ |
-| **Nightly Build** | [![Nightly](https://img.shields.io/badge/Nightly-APK-orange?style=for-the-badge&logo=android)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/) |
+| **Nightly Build** | [![Nightly](https://img.shields.io/badge/Nightly-APK-orange?style=for-the-badge&logo=android)](https://github.com/LuzuJ/Agro_RedConect/tree/main/releases/) |
 
 [📖 Ver Documentación](#-características) • [🎯 Ver Capturas](#-capturas-de-pantalla) • [🔧 Compilar desde Código](#opción-2-compilar-desde-código-fuente)
 
@@ -113,13 +113,13 @@ Frontend:          Backend:           Inteligencia Artificial:
 
 <div align="center">
 
-## [**⬇️ DESCARGAR APK (v1.0.0)**](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk)
+## [**⬇️ DESCARGAR APK (v1.0.0)**](https://github.com/LuzuJ/Agro_RedConect/raw/main/releases/AgroCacao-IA-v1.0.0.apk)
 
-[![Descarga APK](https://img.shields.io/badge/Descargar-APK%20Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk)
+[![Descarga APK](https://img.shields.io/badge/Descargar-APK%20Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/LuzuJ/Agro_RedConect/raw/main/releases/AgroCacao-IA-v1.0.0.apk)
 
 **Tamaño:** 130 MB | **Versión:** 1.0.0 | **Android:** 7.0+
 
-[Ver todas las versiones →](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/)
+[Ver todas las versiones →](https://github.com/LuzuJ/Agro_RedConect/tree/main/releases/)
 
 </div>
 
