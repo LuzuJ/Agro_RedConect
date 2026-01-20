@@ -12,11 +12,21 @@ Esta aplicación está en desarrollo activo. NO usar para decisiones críticas d
 [![Expo](https://img.shields.io/badge/Expo-~54.0.31-000020?logo=expo)](https://expo.dev/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-TFLite-00FFFF?logo=tensorflow)](https://github.com/ultralytics/ultralytics)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![APK](https://img.shields.io/badge/Download-APK-brightgreen?logo=android)](releases/AgroCacao-IA-v1.0.0.apk)
+[![GitHub Release](https://img.shields.io/github/v/release/LuzuJ/Agro_RedConect?logo=github)](https://github.com/LuzuJ/Agro_RedConect/tree/main/releases)
 
 *Detección en tiempo real de Monilia y Fitoftora con inteligencia artificial offline*
 
-[📥 Descargar APK](#-instalación) • [📖 Documentación](#-características) • [🎯 Demo](#-capturas-de-pantalla)
+---
+
+## 📥 Descargas
+
+| Plataforma | Enlace de Descarga |
+|------------|-------------------|
+| **Android** | [![Android APK](https://img.shields.io/badge/Android-APK-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk) |
+| **Android (F-Droid)** | _Próximamente_ |
+| **Nightly Build** | [![Nightly](https://img.shields.io/badge/Nightly-APK-orange?style=for-the-badge&logo=android)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/) |
+
+[📖 Ver Documentación](#-características) • [🎯 Ver Capturas](#-capturas-de-pantalla) • [🔧 Compilar desde Código](#opción-2-compilar-desde-código-fuente)
 
 ---
 
@@ -99,25 +109,48 @@ Frontend:          Backend:           Inteligencia Artificial:
 
 ## 📥 Instalación
 
-### Opción 1: Descargar APK (Recomendado)
+### 📱 Descarga Directa (Recomendado)
 
-1. **Descarga el APK** desde [releases/AgroCacao-IA-v1.0.0.apk](releases/AgroCacao-IA-v1.0.0.apk) (130 MB)
-2. En tu dispositivo Android:
+<div align="center">
+
+## [**⬇️ DESCARGAR APK (v1.0.0)**](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk)
+
+[![Descarga APK](https://img.shields.io/badge/Descargar-APK%20Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/AgroCacao-IA-v1.0.0.apk)
+
+**Tamaño:** 130 MB | **Versión:** 1.0.0 | **Android:** 7.0+
+
+[Ver todas las versiones →](https://github.com/LuzuJ/Agro_RedConect/blob/main/releases/)
+
+</div>
+
+#### 📋 Pasos de instalación:
+
+1. **Descarga** el APK haciendo clic en el botón de arriba
+2. **En tu dispositivo Android:**
    - Ve a **Configuración → Seguridad**
-   - Activa **"Instalar apps de origen desconocido"** para tu navegador
-3. Abre el archivo descargado e instala
-4. Otorga permisos de cámara y ubicación cuando la app lo solicite
+   - Activa **"Instalar apps de origen desconocido"** para tu navegador/administrador de archivos
+3. **Abre** el archivo descargado desde tus descargas
+4. **Toca** "Instalar" y espera a que termine
+5. **Otorga** permisos de cámara y ubicación cuando la app lo solicite
 
-**Requisitos:**
-- Android 7.0 (API 24) o superior
-- 200 MB de espacio libre
-- Cámara trasera
+#### ✅ Requisitos:
+- ✔️ Android 7.0 (API 24) o superior
+- ✔️ 200 MB de espacio libre
+- ✔️ Cámara trasera funcional
+- ✔️ Conexión a internet solo para descargar (la app funciona offline)
 
-### Opción 2: Compilar desde Código Fuente
+---
+
+---
+
+### 🛠️ Opción Avanzada: Compilar desde Código Fuente
+
+<details>
+<summary><b>Click para ver instrucciones de compilación</b></summary>
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/TU_USUARIO/AgroCacao-IA.git
+git clone https://github.com/LuzuJ/Agro_RedConect.git
 cd AgroCacao-IA
 
 # Instalar dependencias
@@ -137,7 +170,9 @@ npm run build:release
 - Android SDK (Android Studio)
 - Git
 
-Para más detalles, consulta [DEPLOY.md](DEPLOY.md).
+📖 Para más detalles, consulta [TECHNICAL.md](TECHNICAL.md).
+
+</details>
 
 ## 🎯 Uso
 
@@ -188,7 +223,7 @@ Para más detalles, consulta [DEPLOY.md](DEPLOY.md).
 └─────────────────────────────────────────────────────────┘
 ```
 
-Ver [ARCHITECTURE.md](ARCHITECTURE.md) para más detalles.
+Ver [TECHNICAL.md](TECHNICAL.md) para más detalles.
 
 ## 📊 Rendimiento
 
@@ -200,6 +235,31 @@ Ver [ARCHITECTURE.md](ARCHITECTURE.md) para más detalles.
 | **Consumo de RAM** | ~180 MB | Durante detección |
 | **Precisión del modelo** | 87% mAP@0.5 | Dataset YOLO |
 
+## � Roadmap
+
+### Versión 1.1.0 (Próximamente)
+- [ ] 🌐 Modo multi-idioma (Español/Inglés/Portugués)
+- [ ] 📊 Exportar historial a CSV/Excel
+- [ ] 🔔 Notificaciones de seguimiento de tratamiento
+- [ ] 📷 Mejorar calidad de detección en baja luz
+- [ ] 🎯 Reducir tamaño del APK a ~100 MB
+
+### Versión 1.2.0 (Futuro)
+- [ ] 🤖 Actualizar a YOLOv10 para mejor precisión
+- [ ] 🌍 Sincronización opcional con la nube
+- [ ] 👥 Modo colaborativo para cooperativas
+- [ ] 📈 Dashboard de estadísticas avanzadas
+- [ ] 🔊 Asistente por voz para accesibilidad
+
+### Versión 2.0.0 (Visión)
+- [ ] 🍃 Detección de más enfermedades (Black Pod, Witch's Broom)
+- [ ] 🌡️ Integración con sensores IoT
+- [ ] 🤝 Marketplace de productos orgánicos
+- [ ] 🎓 Módulo educativo con videos
+- [ ] 🌐 Versión web progresiva (PWA)
+
+[Ver todas las funcionalidades planificadas →](https://github.com/LuzuJ/Agro_RedConect/tree/main)
+
 ## 🔐 Seguridad y Privacidad
 
 - ✅ **100% Offline**: Ningún dato sale del dispositivo
@@ -207,10 +267,9 @@ Ver [ARCHITECTURE.md](ARCHITECTURE.md) para más detalles.
 - ✅ **Datos locales**: AsyncStorage encriptado
 - ✅ **Código abierto**: Auditable en GitHub
 - ✅ **Sin anuncios**: Aplicación limpia
+- ✅ **Sin telemetría**: Respeto total a la privacidad
 
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver [LICENSE](LICENSE) para más detalles.
+Ver [TECHNICAL.md](TECHNICAL.md) para más detalles sobre seguridad.
 
 ```
 MIT License - Copyright (c) 2026 Jonathan Luzuriaga
@@ -221,7 +280,7 @@ MIT License - Copyright (c) 2026 Jonathan Luzuriaga
 **Jonathan Luzuriaga**
 - 📍 Quito, Ecuador
 - 📧 Email: [contacto]
-- 🔗 GitHub: [@TU_USUARIO](https://github.com/TU_USUARIO)
+- 🔗 GitHub: [@TU_USUARIO](https://github.com/LuzuJ)
 
 ## 🤝 Contribuciones
 
@@ -237,7 +296,7 @@ Ver [CONTRIBUTING.md](CONTRIBUTING.md) para más detalles.
 
 ## 🐛 Reportar Problemas
 
-¿Encontraste un bug? [Abre un issue](https://github.com/TU_USUARIO/AgroCacao-IA/issues) con:
+¿Encontraste un bug? [Abre un issue](https://github.com/LuzuJ/Agro_RedConect/tree/main/issues) con:
 - Descripción del problema
 - Pasos para reproducirlo
 - Modelo de dispositivo y versión de Android
@@ -261,7 +320,7 @@ Si usas este proyecto en tu investigación, por favor cita:
   title = {AgroCacao IA: Sistema Inteligente de Detección de Enfermedades en Cacao},
   year = {2026},
   publisher = {GitHub},
-  url = {https://github.com/TU_USUARIO/AgroCacao-IA}
+  url = {https://github.com/LuzuJ/Agro_RedConect/tree/main}
 }
 ```
 
@@ -334,29 +393,56 @@ Agrega tu API key en `app.json` → `config.googleMaps.apiKey`
 
 ## 📄 Licencia
 
-AGPL-3.0 (Modelo YOLOv8 de Ultralytics)
+MIT License - Ver [LICENSE](LICENSE) para más detalles.
 
-- [ ] Integrar modelo TensorFlow Lite para detección real
-- [x] Implementar TreatmentScreen con tabs
-- [x] Agregar HeatmapScreen con lista de detecciones
-- [x] Guardar historial de detecciones con AsyncStorage
-- [x] Modo offline con caché local
+**Nota sobre el modelo YOLOv8:** El modelo de detección está basado en YOLOv8 de [Ultralytics](https://github.com/ultralytics/ultralytics), licenciado bajo AGPL-3.0.
 
-## 📝 Notas
+## 🤝 Contribuir
 
-- Por ahora la detección es simulada (siempre detecta "Monilia 98%")
-- El modelo TFLite está en `assets/models/best_int8.tflite`
-- Colores basados en el diseño web original
-- Textos 100% en español
+¡Las contribuciones son bienvenidas! Si encuentras algún bug o tienes sugerencias:
 
-## 🐛 Solución de Problemas
+1. 🍴 Haz fork del repositorio
+2. 🌿 Crea una rama para tu feature: `git checkout -b feature/nueva-caracteristica`
+3. 💾 Commit tus cambios: `git commit -m 'Agregar nueva característica'`
+4. 📤 Push a la rama: `git push origin feature/nueva-caracteristica`
+5. 🔃 Abre un Pull Request
 
-Si tienes errores al instalar dependencias:
-```bash
-npx expo install --fix
-```
+Ver [TECHNICAL.md](TECHNICAL.md) para guía de desarrollo.
 
-Si la app no carga en Expo Go:
-- Asegúrate de estar en la misma red WiFi
-- Reinicia el servidor con `r` en la terminal
-- Cierra y abre Expo Go de nuevo
+## 🐛 Reportar Problemas
+
+¿Encontraste un bug? [Abre un issue](https://github.com/LuzuJ/Agro_RedConect/tree/main/issue/new) con:
+
+- 📱 Modelo de dispositivo y versión de Android
+- 🐞 Descripción detallada del problema
+- 📸 Capturas de pantalla si es posible
+- 🔢 Pasos para reproducir el error
+
+## 📚 Documentación Adicional
+
+- � [Documentación Técnica Completa](TECHNICAL.md) - Arquitectura, deployment, API y configuración
+- 📄 [Licencia](LICENSE) - Términos de uso y distribución
+
+## 🙏 Agradecimientos
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) - Framework de detección de objetos
+- [React Native Fast TFLite](https://github.com/mrousavy/react-native-fast-tflite) - Bindings de TensorFlow Lite
+- [Expo](https://expo.dev/) - Plataforma de desarrollo móvil
+- Comunidad de cacaocultores que proporcionaron imágenes para entrenamiento
+
+## 👨‍💻 Autor
+
+Desarrollado con ❤️ para cacaocultores
+
+---
+
+<div align="center">
+
+**⭐ Si este proyecto te resulta útil, considera darle una estrella en GitHub ⭐**
+
+[![GitHub stars](https://img.shields.io/github/stars/TU_USUARIO/AgroCacao-IA?style=social)](https://github.com/LuzuJ/Agro_RedConect/)
+[![GitHub forks](https://img.shields.io/github/forks/TU_USUARIO/AgroCacao-IA?style=social)](LuzuJ/Agro_RedConect)
+
+[Reportar Bug]https://github.com/LuzuJ/Agro_RedConect/tree/main/issues) • [Solicitar Feature](https://github.com/LuzuJ/Agro_RedConect/tree/main/issues) • [Ver Roadmap](#-roadmap)
+
+</div>
