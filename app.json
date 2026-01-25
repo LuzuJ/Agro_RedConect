@@ -4,11 +4,11 @@
     "slug": "agrocacao-ia",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo_AgroCacaoIA_optimized.png",
+    "icon": "./assets/logo_AgroCacaoIA.png",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/logo_AgroCacaoIA_optimized.png",
+      "image": "./assets/logo_AgroCacaoIA.png",
       "resizeMode": "contain",
       "backgroundColor": "#132210"
     },
@@ -24,7 +24,7 @@
     "android": {
       "package": "com.agrocacao.ia",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logo_AgroCacaoIA_optimized.png",
+        "foregroundImage": "./assets/logo_AgroCacaoIA.png",
         "backgroundColor": "#132210"
       },
       "permissions": [

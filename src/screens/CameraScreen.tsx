@@ -10,11 +10,15 @@ import * as Location from 'expo-location';
 import { COLORS } from '../constants/colors';
 import { detectionService, DetectionBox } from '../services/DetectionService';
 import { detectionHistoryService } from '../services/DetectionHistoryService';
-import { ModelLabel, HAPTIC_CONFIG } from '../constants/modelConfig';
+import { ModelLabel, HAPTIC_CONFIG, MODEL_CONFIG } from '../constants/modelConfig';
 import { RootStackParamList } from '../navigation/AppNavigator';
 import { getErrorMessage, getErrorTitle, isRetryableError } from '../utils/errors';
+import { BoundingBox } from '../components/BoundingBox';
 
 const { width, height } = Dimensions.get('window');
+
+// Tamaño de entrada del modelo (usado para escalado)
+const MODEL_INPUT_SIZE = MODEL_CONFIG.inputSize; // 640x640
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Camera'>;
 
@@ -386,38 +390,36 @@ export const CameraScreen: React.FC<Props> = ({ navigation }) => {
           </View>
         )}
         
-        {/* Recuadros de detección en tiempo real (SIN PARPADEO) */}
+        {/* Recuadros de detección en tiempo real usando BoundingBox component */}
         {isRealtimeMode && detectedBoxes.length > 0 && (
           <View style={styles.realtimeBoxesOverlay} pointerEvents="none">
             {detectedBoxes.map((box, index) => {
-              const cameraHeight = height;
-              const cameraWidth = width;
+              // ===== ESCALADO DE COORDENADAS =====
+              // El modelo trabaja con 640x640, necesitamos escalar a pantalla real
+              const scaleX = width / MODEL_INPUT_SIZE;
+              const scaleY = height / MODEL_INPUT_SIZE;
               
-              const boxWidth = (box.x2 - box.x1) * cameraWidth;
-              const boxHeight = (box.y2 - box.y1) * cameraHeight;
-              const left = box.x1 * cameraWidth;
-              const top = box.y1 * cameraHeight;
+              // Convertir coordenadas relativas (0-1) a píxeles del modelo (0-640)
+              const modelX1 = box.x1 * MODEL_INPUT_SIZE;
+              const modelY1 = box.y1 * MODEL_INPUT_SIZE;
+              const modelX2 = box.x2 * MODEL_INPUT_SIZE;
+              const modelY2 = box.y2 * MODEL_INPUT_SIZE;
+              
+              // Escalar a coordenadas de pantalla
+              const screenBox = {
+                left: modelX1 * scaleX,
+                top: modelY1 * scaleY,
+                right: modelX2 * scaleX,
+                bottom: modelY2 * scaleY,
+              };
               
               return (
-                <View
-                  key={`box-${index}`}
-                  style={[
-                    styles.realtimeDetectionBox,
-                    { 
-                      left, 
-                      top, 
-                      width: boxWidth, 
-                      height: boxHeight, 
-                      borderColor: box.color,
-                    }
-                  ]}
-                >
-                  <View style={[styles.realtimeDetectionLabel, { backgroundColor: box.color }]}>
-                    <Text style={styles.realtimeDetectionLabelText}>
-                      {box.label === 'Sano' ? 'Sano' : `Precaución: ${box.label}`}
-                    </Text>
-                  </View>
-                </View>
+                <BoundingBox
+                  key={`box-${index}-${box.label}`}
+                  box={screenBox}
+                  label={box.label}
+                  confidence={box.confidence}
+                />
               );
             })}
           </View>
