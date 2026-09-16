@@ -47,9 +47,15 @@ Estas métricas demuestran una capacidad excepcional del modelo para diferenciar
 
 ### 📸 Predicciones y Validación del Modelo
 
-| Predicción en Lote 0 | Predicción en Lote 1 | Matriz de Confusión | Resultados de Entrenamiento |
-|:-------------:|:--------------------:|:-----------:|:------------:|
-| ![Pred 0](Modelo%20IA/Baseline_GPU/Baseline_GPU/val_batch0_pred.jpg) | ![Pred 1](Modelo%20IA/Baseline_GPU/Baseline_GPU/val_batch1_pred.jpg) | ![Matriz](Modelo%20IA/Baseline_GPU/Baseline_GPU/confusion_matrix.png) | ![Resultados](Modelo%20IA/Baseline_GPU/Baseline_GPU/results.png) |
+**Resultados del Entrenamiento:**
+![Resultados](docs/telemetry/results.png)
+
+**Matriz de Confusión:**
+![Matriz](docs/telemetry/confusion_matrix.png)
+
+**Predicciones del Modelo (Lote 0 y 1):**
+![Pred 0](docs/telemetry/val_batch0_pred.jpg)
+![Pred 1](docs/telemetry/val_batch1_pred.jpg)
 
 *Imágenes generadas directamente por mi pipeline de validación de YOLOv8.*
 
