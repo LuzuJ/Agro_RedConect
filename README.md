@@ -16,6 +16,12 @@
 
 *Detección en tiempo real de Monilia y Fitoftora con inteligencia artificial offline*
 
+### 📥 Descargar APK (Android)
+
+Aunque el proyecto está pausado, puedes descargar y probar la versión 1.0.0 (offline) directamente en tu dispositivo Android:
+
+[![Descargar APK](https://img.shields.io/badge/Descargar-APK%20Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a1a)](https://github.com/LuzuJ/Agro_RedConect/raw/main/releases/AgroCacao-IA-v1.0.0.apk)
+
 ---
 </div>
 
